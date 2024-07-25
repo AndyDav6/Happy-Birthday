@@ -38,10 +38,11 @@ body {
     height: 100%;
     width: 50%; 
     position: absolute;
+    left: 50.1%;
 }
 
 .inside {
-    background: linear-gradient(to right, #e0e0e0, #ffffff 30%);
+    background: linear-gradient(to right, #e7e7e7, #ffffff 30%);
     line-height: 3;
     padding: 0 20px;
     text-align: center;
@@ -58,6 +59,7 @@ body {
     z-index: 1;
     transform-origin: left;
     transition: 2s;
+    cursor: pointer;
 }
 
 .front,
@@ -68,7 +70,6 @@ body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: rotateX(0deg);
-    background-color: #ffffff;
 }
 
 .front {
@@ -77,7 +78,7 @@ body {
 
 .back {
     transform: rotateY(180deg);
-    background: linear-gradient(to left, #e0e0e0, #ffffff 30%);
+    background: linear-gradient(to left, #e7e7e7, #ffffff 30%);
 }
 
 .pastel {
@@ -100,8 +101,7 @@ body {
         #fedbab 60px,
         transparent 60px
      ),
-     radial-gradient(
-        circle at 30px 5px, #994c10 30px, #fcbf29 31px);
+     radial-gradient(circle at 30px 5px, #994c10 30px, #fcbf29 31px);
     border-radius: 10px 10px 0 0;
     position: relative;
     margin: auto;
